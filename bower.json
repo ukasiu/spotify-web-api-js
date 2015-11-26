@@ -4,6 +4,6 @@
     
   },
   "devDependencies": {
-    "spotify-web-api-js": "0.13.1"
+    "spotify-web-api-js": "0.X.X"
   }
 }
