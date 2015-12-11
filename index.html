@@ -234,7 +234,162 @@ code {
   margin-right: 6px;
   font-size: 0.7em;
 }
-</style><script srr="https://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.6/js/vendor/custom.modernizr.js"></script></head><body><script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39254352-1"]);_gaq.push(["_trackPageview"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="http://www.google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})()</script><div class="row"><div class="small-12 columns"><h1 class="page-title">Documentation for the Spotify Web API JS wrapper</h1></div></div><div class="row"><div class="small-12 columns">Check the&nbsp;<a href="https://github.com/JMPerez/spotify-web-api-js">GitHub repository</a>&nbsp;for more information about the project</div></div><hr><div class="row"><div id="nav" class="large-3 columns"><div data-section="accordian" data-options="" class="section-container accordian"><div class="section active"><ul class="side-nav solo"><li><a href="#getGeneric">getGeneric</a></li><li><a href="#getMe">getMe</a></li><li><a href="#getMySavedTracks">getMySavedTracks</a></li><li><a href="#addToMySavedTracks">addToMySavedTracks</a></li><li><a href="#removeFromMySavedTracks">removeFromMySavedTracks</a></li><li><a href="#containsMySavedTracks">containsMySavedTracks</a></li><li><a href="#getMySavedAlbums">getMySavedAlbums</a></li><li><a href="#addToMySavedAlbums">addToMySavedAlbums</a></li><li><a href="#removeFromMySavedAlbums">removeFromMySavedAlbums</a></li><li><a href="#containsMySavedAlbums">containsMySavedAlbums</a></li><li><a href="#followUsers">followUsers</a></li><li><a href="#followArtists">followArtists</a></li><li><a href="#followPlaylist">followPlaylist</a></li><li><a href="#unfollowUsers">unfollowUsers</a></li><li><a href="#unfollowArtists">unfollowArtists</a></li><li><a href="#unfollowPlaylist">unfollowPlaylist</a></li><li><a href="#isFollowingUsers">isFollowingUsers</a></li><li><a href="#isFollowingArtists">isFollowingArtists</a></li><li><a href="#areFollowingPlaylist">areFollowingPlaylist</a></li><li><a href="#getFollowedArtists">getFollowedArtists</a></li><li><a href="#getUser">getUser</a></li><li><a href="#getUserPlaylists">getUserPlaylists</a></li><li><a href="#getPlaylist">getPlaylist</a></li><li><a href="#getPlaylistTracks">getPlaylistTracks</a></li><li><a href="#createPlaylist">createPlaylist</a></li><li><a href="#changePlaylistDetails">changePlaylistDetails</a></li><li><a href="#addTracksToPlaylist">addTracksToPlaylist</a></li><li><a href="#replaceTracksInPlaylist">replaceTracksInPlaylist</a></li><li><a href="#reorderTracksInPlaylist">reorderTracksInPlaylist</a></li><li><a href="#requestData">requestData</a></li><li><a href="#removeTracksFromPlaylist">removeTracksFromPlaylist</a></li><li><a href="#removeTracksFromPlaylistWithSnapshotId">removeTracksFromPlaylistWithSnapshotId</a></li><li><a href="#dataToBeSent">dataToBeSent</a></li><li><a href="#removeTracksFromPlaylistInPositions">removeTracksFromPlaylistInPositions</a></li><li><a href="#requestData">requestData</a></li><li><a href="#getAlbum">getAlbum</a></li><li><a href="#getAlbumTracks">getAlbumTracks</a></li><li><a href="#getAlbums">getAlbums</a></li><li><a href="#getTrack">getTrack</a></li><li><a href="#getTracks">getTracks</a></li><li><a href="#getArtist">getArtist</a></li><li><a href="#getArtists">getArtists</a></li><li><a href="#getArtistAlbums">getArtistAlbums</a></li><li><a href="#getArtistTopTracks">getArtistTopTracks</a></li><li><a href="#getArtistRelatedArtists">getArtistRelatedArtists</a></li><li><a href="#getFeaturedPlaylists">getFeaturedPlaylists</a></li><li><a href="#getNewReleases">getNewReleases</a></li><li><a href="#getCategories">getCategories</a></li><li><a href="#getCategory">getCategory</a></li><li><a href="#getCategoryPlaylists">getCategoryPlaylists</a></li><li><a href="#searchAlbums">searchAlbums</a></li><li><a href="#searchArtists">searchArtists</a></li><li><a href="#searchTracks">searchTracks</a></li><li><a href="#searchPlaylists">searchPlaylists</a></li><li><a href="#setAccessToken">setAccessToken</a></li><li><a href="#setPromiseImplementation">setPromiseImplementation</a></li></ul></div></div></div><div class="small-12 large-9 columns"><article class="comment"><header><h1 id="getGeneric">getGeneric</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.getGeneric()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{string}</span><span class="name">url</span><span class="description">The URL to be fetched</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Fetches a resource through a generic GET request.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.getGeneric = function(url, callback) {
+</style><script srr="https://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.6/js/vendor/custom.modernizr.js"></script></head><body><script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39254352-1"]);_gaq.push(["_trackPageview"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="http://www.google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})()</script><div class="row"><div class="small-12 columns"><h1 class="page-title">Documentation for the Spotify Web API JS wrapper</h1></div></div><div class="row"><div class="small-12 columns">Check the&nbsp;<a href="https://github.com/JMPerez/spotify-web-api-js">GitHub repository</a>&nbsp;for more information about the project</div></div><hr><div class="row"><div id="nav" class="large-3 columns"><div data-section="accordian" data-options="" class="section-container accordian"><div class="section active"><ul class="side-nav solo"><li><a href="#getGeneric">getGeneric</a></li><li><a href="#getMe">getMe</a></li><li><a href="#getMySavedTracks">getMySavedTracks</a></li><li><a href="#addToMySavedTracks">addToMySavedTracks</a></li><li><a href="#removeFromMySavedTracks">removeFromMySavedTracks</a></li><li><a href="#containsMySavedTracks">containsMySavedTracks</a></li><li><a href="#getMySavedAlbums">getMySavedAlbums</a></li><li><a href="#addToMySavedAlbums">addToMySavedAlbums</a></li><li><a href="#removeFromMySavedAlbums">removeFromMySavedAlbums</a></li><li><a href="#containsMySavedAlbums">containsMySavedAlbums</a></li><li><a href="#followUsers">followUsers</a></li><li><a href="#followArtists">followArtists</a></li><li><a href="#followPlaylist">followPlaylist</a></li><li><a href="#unfollowUsers">unfollowUsers</a></li><li><a href="#unfollowArtists">unfollowArtists</a></li><li><a href="#unfollowPlaylist">unfollowPlaylist</a></li><li><a href="#isFollowingUsers">isFollowingUsers</a></li><li><a href="#isFollowingArtists">isFollowingArtists</a></li><li><a href="#areFollowingPlaylist">areFollowingPlaylist</a></li><li><a href="#getFollowedArtists">getFollowedArtists</a></li><li><a href="#getUser">getUser</a></li><li><a href="#getUserPlaylists">getUserPlaylists</a></li><li><a href="#getPlaylist">getPlaylist</a></li><li><a href="#getPlaylistTracks">getPlaylistTracks</a></li><li><a href="#createPlaylist">createPlaylist</a></li><li><a href="#changePlaylistDetails">changePlaylistDetails</a></li><li><a href="#addTracksToPlaylist">addTracksToPlaylist</a></li><li><a href="#replaceTracksInPlaylist">replaceTracksInPlaylist</a></li><li><a href="#reorderTracksInPlaylist">reorderTracksInPlaylist</a></li><li><a href="#requestData">requestData</a></li><li><a href="#removeTracksFromPlaylist">removeTracksFromPlaylist</a></li><li><a href="#removeTracksFromPlaylistWithSnapshotId">removeTracksFromPlaylistWithSnapshotId</a></li><li><a href="#dataToBeSent">dataToBeSent</a></li><li><a href="#removeTracksFromPlaylistInPositions">removeTracksFromPlaylistInPositions</a></li><li><a href="#requestData">requestData</a></li><li><a href="#getAlbum">getAlbum</a></li><li><a href="#getAlbumTracks">getAlbumTracks</a></li><li><a href="#getAlbums">getAlbums</a></li><li><a href="#getTrack">getTrack</a></li><li><a href="#getTracks">getTracks</a></li><li><a href="#getArtist">getArtist</a></li><li><a href="#getArtists">getArtists</a></li><li><a href="#getArtistAlbums">getArtistAlbums</a></li><li><a href="#getArtistTopTracks">getArtistTopTracks</a></li><li><a href="#getArtistRelatedArtists">getArtistRelatedArtists</a></li><li><a href="#getFeaturedPlaylists">getFeaturedPlaylists</a></li><li><a href="#getNewReleases">getNewReleases</a></li><li><a href="#getCategories">getCategories</a></li><li><a href="#getCategory">getCategory</a></li><li><a href="#getCategoryPlaylists">getCategoryPlaylists</a></li><li><a href="#searchAlbums">searchAlbums</a></li><li><a href="#searchArtists">searchArtists</a></li><li><a href="#searchTracks">searchTracks</a></li><li><a href="#searchPlaylists">searchPlaylists</a></li><li><a href="#getAccessToken">getAccessToken</a></li><li><a href="#setAccessToken">setAccessToken</a></li><li><a href="#setPromiseImplementation">setPromiseImplementation</a></li></ul></div></div></div><div class="small-12 large-9 columns"><article class="comment"><header></header><ul class="no-bullet tags"></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>global module</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">'use strict';
+var SpotifyWebApi = (function() {
+
+  var _baseUri = 'https://api.spotify.com/v1';
+  var _accessToken = null;
+  var _promiseImplementation = null;
+
+  var WrapPromiseWithAbort = function(promise, onAbort) {
+    promise.abort = onAbort;
+    return promise;
+  };
+
+  var _promiseProvider = function(promiseFunction, onAbort) {
+    var returnedPromise;
+    if (_promiseImplementation !== null) {
+      var deferred = _promiseImplementation.defer();
+      promiseFunction(function(resolvedResult) {
+        deferred.resolve(resolvedResult);
+      }, function(rejectedResult) {
+        deferred.reject(rejectedResult);
+      });
+      returnedPromise = deferred.promise;
+    } else {
+      if (window.Promise) {
+        returnedPromise = new window.Promise(promiseFunction);
+      }
+    }
+
+    if (returnedPromise) {
+      return new WrapPromiseWithAbort(returnedPromise, onAbort);
+    } else {
+      return null;
+    }
+  };
+
+  var _extend = function() {
+    var args = Array.prototype.slice.call(arguments);
+    var target = args[0];
+    var objects = args.slice(1);
+    target = target || {};
+    objects.forEach(function(object) {
+      for (var j in object) {
+        if (object.hasOwnProperty(j)) {
+          target[j] = object[j];
+        }
+      }
+    });
+    return target;
+  };
+
+  var _buildUrl = function(url, parameters) {
+    var qs = '';
+    for (var key in parameters) {
+      if (parameters.hasOwnProperty(key)) {
+        var value = parameters[key];
+        qs += encodeURIComponent(key) + '=' + encodeURIComponent(value) + '&amp;';
+      }
+    }
+    if (qs.length &gt; 0) {
+      // chop off last '&amp;'
+      qs = qs.substring(0, qs.length - 1);
+      url = url + '?' + qs;
+    }
+    return url;
+  };
+
+  var _performRequest = function(requestData, callback) {
+
+    var req = new XMLHttpRequest();
+
+    var promiseFunction = function(resolve, reject) {
+
+      function success(data) {
+        if (resolve) {
+          resolve(data);
+        }
+        if (callback) {
+          callback(null, data);
+        }
+      }
+
+      function failure() {
+        if (reject) {
+          reject(req);
+        }
+        if (callback) {
+          callback(req, null);
+        }
+      }
+
+      var type = requestData.type || 'GET';
+      req.open(type, _buildUrl(requestData.url, requestData.params));
+      if (_accessToken) {
+        req.setRequestHeader('Authorization', 'Bearer ' + _accessToken);
+      }
+
+      req.onreadystatechange = function() {
+        if (req.readyState === 4) {
+          var data = null;
+          try {
+            data = req.responseText ? JSON.parse(req.responseText) : '';
+          } catch (e) {
+            console.error(e);
+          }
+
+          if (req.status &gt;= 200 &amp;&amp; req.status &lt; 300) {
+            success(data);
+          } else {
+            failure();
+          }
+        }
+      };
+
+      if (type === 'GET') {
+        req.send(null);
+      } else {
+        req.send(requestData.postData ? JSON.stringify(requestData.postData) : null);
+      }
+    };
+
+    if (callback) {
+      promiseFunction();
+      return null;
+    } else {
+      return _promiseProvider(promiseFunction, function() {
+        req.abort();
+      });
+    }
+  };
+
+  var _checkParamsAndPerformRequest = function(requestData, options, callback) {
+    var opt = {};
+    var cb = null;
+
+    if (typeof options === 'object') {
+      opt = options;
+      cb = callback;
+    } else if (typeof options === 'function') {
+      cb = options;
+    }
+
+    // options extend postData, if any. Otherwise they extend parameters sent in the url
+    var type = requestData.type || 'GET';
+    if (type !== 'GET' &amp;&amp; requestData.postData) {
+      requestData.postData = _extend(requestData.postData, opt);
+    } else {
+      requestData.params = _extend(requestData.params, opt);
+    }
+    return _performRequest(requestData, cb);
+  };
+
+  var Constr = function() {};
+
+  Constr.prototype = {
+    constructor: SpotifyWebApi
+  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="getGeneric">getGeneric</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.getGeneric()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{string}</span><span class="name">url</span><span class="description">The URL to be fetched</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Fetches a resource through a generic GET request.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.getGeneric = function(url, callback) {
     var requestData = {
       url: url
     };
@@ -270,31 +425,31 @@ code {
     };
     return _checkParamsAndPerformRequest(requestData, options, callback);
   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="getMySavedAlbums">getMySavedAlbums</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.getMySavedAlbums()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Get a list of the albums saved in the current Spotify user&#39;s &quot;Your Music&quot; library. See <a href="https://developer.spotify.com/web-api/get-users-saved-albums/">Get Current User&#39;s Saved Albums</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.getMySavedAlbums = function(options, callback) {
-     var requestData = {
-       url: _baseUri + '/me/albums'
-     };
-     return _checkParamsAndPerformRequest(requestData, options, callback);
-   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="addToMySavedAlbums">addToMySavedAlbums</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.addToMySavedAlbums()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">albumIds</span><span class="description">The ids of the albums. If you know their Spotify URI, it is easy to find their album id (e.g. spotify:album:&lt;here_is_the_album_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Save one or more albums to the current user&#39;s &quot;Your Music&quot; library. See <a href="https://developer.spotify.com/web-api/save-albums-user/">Save Albums for Current User</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.addToMySavedAlbums = function(albumIds, options, callback) {
-     var requestData = {
-       url: _baseUri + '/me/albums',
-       type: 'PUT',
-       postData: albumIds
-     };
-     return _checkParamsAndPerformRequest(requestData, options, callback);
-   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="removeFromMySavedAlbums">removeFromMySavedAlbums</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.removeFromMySavedAlbums()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">albumIds</span><span class="description">The ids of the albums. If you know their Spotify URI, it is easy to find their album id (e.g. spotify:album:&lt;here_is_the_album_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Remove one or more albums from the current user&#39;s &quot;Your Music&quot; library. See <a href="https://developer.spotify.com/web-api/remove-albums-user/">Remove Albums for Current User</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.removeFromMySavedAlbums = function(albumIds, options, callback) {
-     var requestData = {
-       url: _baseUri + '/me/albums',
-       type: 'DELETE',
-       postData: albumIds
-     };
-     return _checkParamsAndPerformRequest(requestData, options, callback);
-   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="containsMySavedAlbums">containsMySavedAlbums</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.containsMySavedAlbums()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">albumIds</span><span class="description">The ids of the albums. If you know their Spotify URI, it is easy to find their album id (e.g. spotify:album:&lt;here_is_the_album_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Check if one or more albums is already saved in the current Spotify user&#39;s &quot;Your Music&quot; library. See <a href="https://developer.spotify.com/web-api/check-users-saved-albums/">Check User&#39;s Saved Albums</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.containsMySavedAlbums = function(albumIds, options, callback) {
-     var requestData = {
-       url: _baseUri + '/me/albums/contains',
-       params: { ids: albumIds.join(',') }
-     };
-     return _checkParamsAndPerformRequest(requestData, options, callback);
-   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="followUsers">followUsers</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.followUsers()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">userIds</span><span class="description">The ids of the users. If you know their Spotify URI it is easy to find their user id (e.g. spotify:user:&lt;here_is_the_user_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is an empty value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Adds the current user as a follower of one or more other Spotify users. See <a href="https://developer.spotify.com/web-api/follow-artists-users/">Follow Artists or Users</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.followUsers = function(userIds, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums'
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="addToMySavedAlbums">addToMySavedAlbums</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.addToMySavedAlbums()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">albumIds</span><span class="description">The ids of the albums. If you know their Spotify URI, it is easy to find their album id (e.g. spotify:album:&lt;here_is_the_album_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Save one or more albums to the current user&#39;s &quot;Your Music&quot; library. See <a href="https://developer.spotify.com/web-api/save-albums-user/">Save Albums for Current User</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.addToMySavedAlbums = function(albumIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums',
+      type: 'PUT',
+      postData: albumIds
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="removeFromMySavedAlbums">removeFromMySavedAlbums</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.removeFromMySavedAlbums()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">albumIds</span><span class="description">The ids of the albums. If you know their Spotify URI, it is easy to find their album id (e.g. spotify:album:&lt;here_is_the_album_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Remove one or more albums from the current user&#39;s &quot;Your Music&quot; library. See <a href="https://developer.spotify.com/web-api/remove-albums-user/">Remove Albums for Current User</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.removeFromMySavedAlbums = function(albumIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums',
+      type: 'DELETE',
+      postData: albumIds
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="containsMySavedAlbums">containsMySavedAlbums</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.containsMySavedAlbums()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">albumIds</span><span class="description">The ids of the albums. If you know their Spotify URI, it is easy to find their album id (e.g. spotify:album:&lt;here_is_the_album_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Check if one or more albums is already saved in the current Spotify user&#39;s &quot;Your Music&quot; library. See <a href="https://developer.spotify.com/web-api/check-users-saved-albums/">Check User&#39;s Saved Albums</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.containsMySavedAlbums = function(albumIds, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/albums/contains',
+      params: { ids: albumIds.join(',') }
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="followUsers">followUsers</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.followUsers()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Array&lt;string&gt;}</span><span class="name">userIds</span><span class="description">The ids of the users. If you know their Spotify URI it is easy to find their user id (e.g. spotify:user:&lt;here_is_the_user_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is an empty value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Adds the current user as a follower of one or more other Spotify users. See <a href="https://developer.spotify.com/web-api/follow-artists-users/">Follow Artists or Users</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.followUsers = function(userIds, callback) {
     var requestData = {
       url: _baseUri + '/me/following/',
       type: 'PUT',
@@ -398,10 +553,20 @@ artists.</span></li><li class="tag"><span class="type">@returns: </span><span cl
       url: _baseUri + '/users/' + userId
     };
     return _checkParamsAndPerformRequest(requestData, options, callback);
-  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="getUserPlaylists">getUserPlaylists</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.getUserPlaylists()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{string}</span><span class="name">userId</span><span class="description">The id of the user. If you know the Spotify URI it is easy to find the id (e.g. spotify:user:&lt;here_is_the_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Fetches a list of the current user&#39;s playlists. See <a href="https://developer.spotify.com/web-api/get-list-users-playlists/">Get a List of a User&#39;s Playlists</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.getUserPlaylists = function(userId, options, callback) {
-    var requestData = {
-      url: _baseUri + '/users/' + userId + '/playlists'
-    };
+  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="getUserPlaylists">getUserPlaylists</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.getUserPlaylists()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{string}</span><span class="name">userId</span><span class="description">An optional id of the user. If you know the Spotify URI it is easy to find the id (e.g. spotify:user:&lt;here_is_the_id&gt;). If not provided, the id of the user that granted
+the permissions will be used.</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Fetches a list of the current user&#39;s playlists. See <a href="https://developer.spotify.com/web-api/get-list-users-playlists/">Get a List of a User&#39;s Playlists</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.getUserPlaylists = function(userId, options, callback) {
+    var requestData;
+    if (typeof userId === 'string') {
+      requestData = {
+        url: _baseUri + '/users/' + userId + '/playlists'
+      };
+    } else {
+      requestData = {
+        url: _baseUri + '/me/playlists'
+      };
+      options = userId;
+      callback = options;
+    }
     return _checkParamsAndPerformRequest(requestData, options, callback);
   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="getPlaylist">getPlaylist</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.getPlaylist()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{string}</span><span class="name">userId</span><span class="description">The id of the user. If you know the Spotify URI it is easy to find the user id (e.g. spotify:user:&lt;here_is_the_user_id&gt;:playlist:xxxx)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{string}</span><span class="name">playlistId</span><span class="description">The id of the playlist. If you know the Spotify URI it is easy to find the playlist id (e.g. spotify:user:xxxx:playlist:&lt;here_is_the_playlist_id&gt;)</span></li><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">options</span><span class="description">A JSON object with options that can be passed</span></li><li class="tag"><span class="type">@param: </span><span class="types">{function(Object,Object)}</span><span class="name">callback</span><span class="description">An optional callback that receives 2 parameters. The first one is the error object (null if no error), and the second is the value if the request succeeded.</span></li><li class="tag"><span class="type">@return: </span><span class="types">{Object}</span><span class="description">Null if a callback is provided, a `Promise` object otherwise</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Fetches a specific playlist. See <a href="https://developer.spotify.com/web-api/get-playlist/">Get a Playlist</a> on the Spotify Developer site for more information about the endpoint.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.getPlaylist = function(userId, playlistId, options, callback) {
     var requestData = {
@@ -609,6 +774,8 @@ string) and `positions` (which is an array of integers).</span></li><li class="t
       }
     };
     return _checkParamsAndPerformRequest(requestData, options, callback);
+  };</code></pre></div></div></div></article><article class="comment"><header><h1 id="getAccessToken">getAccessToken</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.getAccessToken()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@return: </span><span class="types">{string}</span><span class="description">accessToken The access token</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Gets the access token in use.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.getAccessToken = function() {
+    return _accessToken;
   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="setAccessToken">setAccessToken</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.setAccessToken()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{string}</span><span class="name">accessToken</span><span class="description">The access token</span></li><li class="tag"><span class="type">@return: </span><span class="types">{void}</span><span class="description"></span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Sets the access token to be used. See <a href="https://developer.spotify.com/web-api/authorization-guide/">the Authorization Guide</a> on the Spotify Developer site for more information about obtaining an access token.</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.setAccessToken = function(accessToken) {
     _accessToken = accessToken;
   };</code></pre></div></div></div></article><article class="comment"><header><h1 id="setPromiseImplementation">setPromiseImplementation</h1><h5 class="subheader"><div class="label radius ctx-type">method</div>Constr.prototype.setPromiseImplementation()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Object}</span><span class="name">promiseImplementation</span><span class="description">A Promises/A+ valid implementation</span></li><li class="tag"><span class="type">@throws: </span><span class="types">{Error}</span><span class="description">If the implementation being set doesn't conform with Promises/A+</span></li><li class="tag"><span class="type">@return: </span><span class="types">{void}</span><span class="description"></span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Sets an implementation of Promises/A+ to be used. E.g. Q, when. See <a href="https://github.com/promises-aplus/promises-spec/blob/master/implementations.md">Conformant Implementations</a> for a list of some available options</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Constr.prototype.setPromiseImplementation = function(promiseImplementation) {
