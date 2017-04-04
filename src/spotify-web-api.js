@@ -187,6 +187,15 @@ var SpotifyWebApi = (function() {
     return _checkParamsAndPerformRequest(requestData, options, callback);
   };
 
+  Constr.prototype.playTracks = function(params, options, callback) {
+    var requestData = {
+      url: _baseUri + '/me/player/play',
+      type: 'PUT',
+      postData: params
+    };
+    return _checkParamsAndPerformRequest(requestData, options, callback);
+  };
+
   /**
    * Fetches current user's saved tracks.
    * See [Get Current User's Saved Tracks](https://developer.spotify.com/web-api/get-users-saved-tracks/) on
@@ -375,23 +384,6 @@ var SpotifyWebApi = (function() {
   Constr.prototype.getMyTopTracks = function(options, callback) {
     var requestData = {
       url: _baseUri + '/me/top/tracks'
-    };
-    return _checkParamsAndPerformRequest(requestData, options, callback);
-  };
-
-  /**
-   * Get tracks from the current user’s recently played tracks.
-   * See [Get Current User’s Recently Played Tracks](https://developer.spotify.com/web-api/web-api-personalization-endpoints/get-recently-played/) on
-   * the Spotify Developer site for more information about the endpoint.
-   *
-   * @param {Object} options A JSON object with options that can be passed
-   * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
-   * one is the error object (null if no error), and the second is the value if the request succeeded.
-   * @return {Object} Null if a callback is provided, a `Promise` object otherwise
-   */
-  Constr.prototype.getMyRecentlyPlayedTracks = function(options, callback) {
-    var requestData = {
-      url: _baseUri + '/me/player/recently-played'
     };
     return _checkParamsAndPerformRequest(requestData, options, callback);
   };
